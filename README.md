@@ -14,5 +14,5 @@
   document.body.removeChild(anchorElement); // cleanup - 쓰임을 다한 a 태그 삭제
   window.URL.revokeObjectUrl(downloadUrl); // cleanup - 쓰임을 다한 url 객체 삭제
 }</script>
-* <button onclick="fandleFileDownload('bottombtn_off.png')">bottombtn_off.png</button>
-* <button onclick="fandleFileDownload('bottombtn_pn.png')">bottombtn_on.png</button>
+* <a onclick="handleFileDownload('bottombtn_off.png')">bottombtn_off.png</a>
+* <a onclick="handleFileDownload('bottombtn_pn.png')">bottombtn_on.png</a>

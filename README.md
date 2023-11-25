@@ -12,7 +12,7 @@
   anchorElement.click(); // 코드 상으로 클릭을 해줘서 다운로드를 트리거
  
   document.body.removeChild(anchorElement); // cleanup - 쓰임을 다한 a 태그 삭제
-  window.URL.revokeObjectUrl(downloadUrl); // cleanup - 쓰임을 다한 url 객체 삭제
+  global.URL.revokeObjectUrl(downloadUrl); // cleanup - 쓰임을 다한 url 객체 삭제
 }</script>
 * <a href="javascript:handleFileDownload('bottombtn_off.png')">bottombtn_off.png</a>
 * <a href="javascript:handleFileDownload('bottombtn_on.png')">bottombtn_on.png</a>

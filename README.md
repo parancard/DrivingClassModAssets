@@ -1,5 +1,5 @@
 # DrivingClassModAssets
-<script>	function handleFileDownload(addr) {
+<script>	async function handleFileDownload(addr) {
   const response = await fetch(addr);
   const file = await response.blob(); 
   const downloadUrl = window.URL.createObjectURL(file); // 해당 file을 가리키는 url 생성
@@ -14,5 +14,5 @@
   document.body.removeChild(anchorElement); // cleanup - 쓰임을 다한 a 태그 삭제
   window.URL.revokeObjectUrl(downloadUrl); // cleanup - 쓰임을 다한 url 객체 삭제
 }</script>
-* <button onclick="fandleFileDownload('bottombtn_off.png')">
-* <button onclick="fandleFileDownload('bottombtn_pn.png')">
+* <button onclick="fandleFileDownload('bottombtn_off.png')">bottombtn_off.png</button>
+* <button onclick="fandleFileDownload('bottombtn_pn.png')">bottombtn_on.png</button>
